@@ -5,6 +5,16 @@ import Diferentials from '@/components/Diferentials'
 import Contact from '@/components/Contact'
 import Location from '@/components/Location'
 
+// Build trigger: ensure Vercel deploys the current main branch.
 export default function Home() {
-  return <><Hero /><About /><Services /><Diferentials /><Location /><Contact /></>
+  return (
+    <>
+      <Hero />
+      <About />
+      <Services />
+      <Diferentials />
+      <Location />
+      <Contact />
+    </>
+  )
 }
