@@ -1,0 +1,3 @@
+export default function Termos() {
+  return <main className="section-padding"><div className="container-custom max-w-3xl"><p className="text-accent-500 font-semibold">DOCUMENTO</p><h1 className="text-primary-900">Termos de Uso</h1><p className="text-gray-600">Esta página é uma estrutura inicial para os termos de uso do site. Antes da publicação definitiva, o conteúdo deve ser revisado e validado pelo responsável jurídico do escritório.</p><a href="/" className="btn-primary mt-6">Voltar ao site</a></div></main>
+}
