@@ -1,0 +1,3 @@
+export default function Privacidade() {
+  return <main className="section-padding"><div className="container-custom max-w-3xl"><p className="text-accent-500 font-semibold">DOCUMENTO</p><h1 className="text-primary-900">Política de Privacidade</h1><p className="text-gray-600">Esta página é uma estrutura inicial para a política de privacidade do escritório. Antes da publicação definitiva, o conteúdo deve ser revisado e validado pelo responsável jurídico, incluindo informações sobre tratamento de dados, bases legais, direitos dos titulares e canais de contato.</p><a href="/" className="btn-primary mt-6">Voltar ao site</a></div></main>
+}
