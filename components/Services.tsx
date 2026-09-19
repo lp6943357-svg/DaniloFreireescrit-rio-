@@ -1,45 +1,4 @@
 'use client'
-import { Briefcase, FileText, Users, Gavel, TrendingUp } from 'lucide-react'
-
-export default function Services() {
-  const services = [
-    { icon: Briefcase, title: 'Direito Empresarial', description: 'Consultoria em constituição, reorganização e estruturação de empresas.' },
-    { icon: FileText, title: 'Contratos Comerciais', description: 'Elaboração, revisão e negociação de contratos empresariais.' },
-    { icon: Users, title: 'Acordos Comerciais', description: 'Negociação e formalização de parcerias e operações empresariais.' },
-    { icon: Users, title: 'Direito Societário', description: 'Consultoria sobre governança, acordos de sócios e reorganizações.' },
-    { icon: Gavel, title: 'Consultoria Contenciosa', description: 'Representação e consultoria em litígios comerciais e administrativos.' },
-    { icon: TrendingUp, title: 'Planejamento Estratégico', description: 'Análise de riscos jurídicos e estruturação de estratégias preventivas.' }
-  ]
-
-  return (
-    <section id="servicos" className="section-padding bg-white">
-      <div className="container-custom">
-        <div className="max-w-3xl mx-auto text-center mb-16 animate-fadeIn">
-          <span className="text-accent-500 font-semibold text-lg">SERVIÇOS</span>
-          <h2 className="mt-4 mb-6 text-primary-900">Soluções Jurídicas Completas</h2>
-          <p className="text-lg text-gray-600">Serviços jurídicos para atender às necessidades de empresas em diferentes estágios.</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => {
-            const Icon = service.icon
-            return (
-              <div key={index} className="group animate-slideUp bg-white border-2 border-gray-200 hover:border-accent-500 rounded-xl p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-                <div className="mb-6 inline-block p-4 bg-gradient-to-br from-primary-100 to-accent-100 rounded-lg group-hover:from-accent-500 group-hover:to-accent-600">
-                  <Icon className="w-8 h-8 text-primary-700 group-hover:text-white" />
-                </div>
-                <h3 className="text-xl font-bold text-primary-900 mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-                <a href="#contato" className="inline-flex items-center text-accent-500 font-semibold">Saiba mais <span className="ml-2">→</span></a>
-              </div>
-            )
-          })}
-        </div>
-        <div className="mt-16 p-12 bg-gradient-to-r from-primary-900 to-primary-800 rounded-2xl text-white text-center">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Não encontrou o serviço que procura?</h3>
-          <p className="text-lg text-gray-200 mb-6 max-w-2xl mx-auto">Entre em contato para discutir sua necessidade jurídica específica.</p>
-          <a href="https://wa.me/553137851890?text=Olá%20Danilo%20Freire%20Advogados.%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." target="_blank" rel="noopener noreferrer" className="btn-secondary">Entrar em Contato</a>
-        </div>
-      </div>
-    </section>
-  )
-}
+import { BriefcaseBusiness, Landmark, HandCoins, Building2, FileText, Scale } from 'lucide-react'
+const services=[{icon:BriefcaseBusiness,title:'Direito Empresarial',description:'Assessoria jurídica para decisões, contratos, operações e desafios do ambiente empresarial.'},{icon:Landmark,title:'Planejamento Patrimonial',description:'Estruturação jurídica do patrimônio com visão de proteção, organização e continuidade.'},{icon:HandCoins,title:'Recuperação de Crédito',description:'Atuação estratégica na cobrança e negociação de créditos e dívidas empresariais.'},{icon:Building2,title:'Holding e Planejamento Sucessório',description:'Estruturas jurídicas voltadas à organização patrimonial e ao planejamento sucessório.'},{icon:FileText,title:'Contratos e Negociações',description:'Elaboração, revisão e negociação de instrumentos jurídicos alinhados aos interesses do cliente.'},{icon:Scale,title:'Contencioso Estratégico',description:'Atuação em demandas judiciais e administrativas que exigem análise técnica e estratégia.'}]
+export default function Services(){return <section id="atuacao" className="section-padding bg-white"><div className="container-custom"><div className="flex flex-col md:flex-row md:items-end md:justify-between gap-7 mb-14"><div><span className="text-accent-600 text-xs tracking-[.28em] uppercase">Áreas de atuação</span><h2 className="text-primary-900 mt-4 mb-0">Soluções jurídicas<br/><span className="text-accent-600">pensadas para cada realidade.</span></h2></div><p className="max-w-md text-gray-500">Conhecimento técnico aliado à compreensão do negócio, do patrimônio e dos objetivos de cada cliente.</p></div><div className="grid md:grid-cols-2 lg:grid-cols-3 border-t border-l border-gray-200">{services.map((s,i)=>{const Icon=s.icon;return <article key={s.title} className="group p-8 md:p-10 border-r border-b border-gray-200 hover:bg-primary-900 transition-all duration-300"><div className="w-12 h-12 flex items-center justify-center border border-accent-500/60 text-accent-600 group-hover:text-accent-400 mb-8"><Icon size={23}/></div><span className="text-xs text-gray-400 group-hover:text-gray-500">0{i+1}</span><h3 className="text-xl text-primary-900 group-hover:text-white mt-3 mb-3">{s.title}</h3><p className="text-gray-600 group-hover:text-gray-300 text-sm leading-relaxed mb-0">{s.description}</p></article>})}</div></div></section>}
